@@ -5,3 +5,19 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 @media(max-width:760px){.project[data-category="wetlab"] .annotation-flow>span{font-size:20px;padding:9px 7px}}
+
+/* Skills: compact icon-header cards inspired by the reference portfolio. */
+.skills-section{background:#edf1e8;border-block:1px solid #dbe3d7}
+.skills-title{text-align:center;margin-bottom:36px}
+.skills-title .eyebrow{margin-bottom:12px}
+.skills-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.skill-card{background:#fff;border:1px solid #d2ddd1;border-radius:5px;overflow:hidden;box-shadow:0 2px 6px rgba(24,63,58,.035)}
+.skill-card-heading{display:flex;align-items:center;gap:11px;padding:14px 18px;border-bottom:1px solid #cbdad0;background:#f8faf6}
+.skill-card h3{font-family:var(--sans);font-size:16px;font-weight:500;line-height:1.45;letter-spacing:-.015em}
+.skill-icon{width:24px;height:24px;flex:0 0 24px;color:#3d7d6d}
+.skill-card:nth-child(3n+2) .skill-icon{color:#9b713e}
+.skill-card:nth-child(3n) .skill-icon{color:#557a91}
+.skill-card>p{font-size:13px;line-height:1.85;padding:17px 18px 21px}
+.education-section{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
+@media(max-width:1000px){.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.education-section{gap:40px}.nav-links{gap:15px}}
+@media(max-width:760px){.skills-grid{grid-template-columns:1fr;gap:15px}.skills-title{margin-bottom:28px}.education-section{grid-template-columns:1fr;gap:30px}.skill-card>p{font-size:14px}.skill-card h3{font-size:17px}}
