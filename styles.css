@@ -21,3 +21,23 @@
 .education-section{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
 @media(max-width:1000px){.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.education-section{gap:40px}.nav-links{gap:15px}}
 @media(max-width:760px){.skills-grid{grid-template-columns:1fr;gap:15px}.skills-title{margin-bottom:28px}.education-section{grid-template-columns:1fr;gap:30px}.skill-card>p{font-size:14px}.skill-card h3{font-size:17px}}
+
+/* Community activities and header links. */
+.hero-actions{flex-wrap:wrap;column-gap:25px;row-gap:16px}
+.nav-links{gap:20px;font-size:12px}
+.outreach-section{background:#edf1e8;border-block:1px solid #dbe3d7}
+.community-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.community-card{padding:30px;background:var(--paper);border:1px solid #d2ddd1;border-radius:4px}
+.community-date{font-size:11px;letter-spacing:1px;color:#617b68;margin-bottom:13px}
+.community-card h3{font-size:21px;font-family:var(--serif);font-weight:400;line-height:1.4}
+.community-card>p:last-child{margin-top:16px;font-size:14px;line-height:1.9}
+@media(min-width:761px) and (max-width:1100px){
+.nav{flex-wrap:wrap;gap:0;padding-block:15px;min-height:70px}
+.menu-toggle:not([hidden]){display:block}
+.nav-links{width:100%;padding-top:12px;gap:5px;justify-content:space-between;flex-wrap:wrap}
+.js-ready .nav-links{display:none}
+.js-ready .nav-links.is-open{display:flex;flex-direction:column;align-items:stretch;padding-bottom:12px}
+.js-ready .nav-links a{padding:10px 0}
+.nav-contact{border:0}
+}
+@media(max-width:760px){.community-grid{grid-template-columns:1fr;gap:18px}.community-card{padding:24px}.hero-actions{column-gap:22px;row-gap:18px}}
